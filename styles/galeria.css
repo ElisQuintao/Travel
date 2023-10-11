@@ -1,0 +1,79 @@
+main{
+    width: 40%;
+    margin: 0% auto;
+    background-color: blueviolet;
+    box-shadow: grey;
+    border-radius: 5px;
+    padding: 20px;
+}
+/* pai */
+#galeriadestinos{
+    width: 100%;
+    
+    background-color: aqua;
+    /* posicionamento padrao : esquerda, topo e coluna "inline block" - display "flex" foge o padrão, a orientaçao fica em linha, um ao lado do outro */
+    display: flex;
+    /*"flex direction: " row: linha(da esquerda para direita), / para inverter esse direcionamento, use "row-reverse( da direita para esquerda)"
+    "flex-direction: column, coloca em colunas (de cima para baixo" */
+    flex-direction: row;
+    justify-content: center;  /*posicionamento do flex box: star: no inicio / center: no centro/ end: no final 
+    space - between: redicionaria espaços entre as caixas(box) / space-around: cria espaços ao redor do box*/
+    /* esse comando alinha os itens a partir da altura e lagura do pai"#destino" no sentido vertical */
+    /* align itens: alinha os itens, se fosse alinhar varios, uma seçao, usar align-content */
+    align-items: start;
+    /* flex-wrap: por padrão vem nowrap - entao o correto é utilizar wrap/ evita distorçoes na falta de espaço */
+    flex-wrap: wrap;
+    /* gap é onde configura a margem, espaçamento entre os elementos dentro flex box */
+    gap: 20px;
+
+}
+/* filho de #destino */
+.galeriaDestF{
+    width: 200px;
+    height: 300px;
+    background-color: brown;
+    margin: 10px;
+    
+}
+.produto{
+    width: 200px;
+    height: 300px;
+    margin: 10px;
+    background-color: darkgreen;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.imageproduto{
+width: 100%;
+height: 50%;
+border-radius: 5px;
+overflow: hidden;
+background-color: bisque;
+} 
+.imageproduto img{
+    width: 100%;
+    height: 100%;
+}
+.descricaoproduto{
+width: 100%;
+height: 50%;
+/* background-color: rgb(189, 115, 23); */
+
+}
+h4{
+    font-size: 16pt;
+    margin: 1px 0px;
+    color: white;
+    text-align: center;
+}
+.textodescricao{
+    margin: 1px;
+    color: rgb(161, 161, 183);
+}
+.preco{
+    font-size: 14pt;
+    font-weight: bold;
+    color: antiquewhite;
+}
